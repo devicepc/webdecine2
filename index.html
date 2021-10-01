@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./images/logo2.png" type="image/gif" sizes="16x16">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet"  type="text/css" href="./css/fontello.css">
+    <link rel="stylesheet" href="./css/ticket.css">
+    <script type="text/javascript" src="./js/entradas.js"></script>
+    <script src="./js/ticketentradas.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.3/html2pdf.bundle.min.js" ></script>
+    <script src="./js/pdf.js"></script>
+    <script src="html2pdf.bundle.min.js"></script>
+  <script src="./js/slider.js"></script>
+  
+    <title>Cine jlasf :: Web de Pelicula </title>
+</head>
+<body>
+    <div id="cabecera">
+        <a href="./index.html"><img src="./images/logo6.png" alt="Logo Cines Jlasf" class="logo"> </a>
+        <h5 class="H5cabecera">Inicia sesion<span class="icon-user"></span></h5>
+        <h5 class="H5cabecera">Crear usuario<span class="icon-user-add"></span></h5>
+    </div>
+    <header>
+<input type="checkbox" id="btn-menu">
+<label for="btn-menu"><img src="./images/menu2.png" alt="btn-menu"></label>
+<nav  class="menu">
+    <ul >
+        <li><a href="">Inicio </a></li>
+        <li><a href="">Peliculas <span class="icon-film"></span></a></li></a>
+        <li><a href="">Cines </a></li>
+        <li><a href="">FAQ <span class="icon-faq"></span></a></li>
+        <li><a href="">Contactos <span class="icon-contactos"></span></a></li>
+    </ul>
+</nav>
+
+    </header>
+
+
+    <div class="TiposPeliculas">
+        <a href="">Cine  ></a>
+        <a href="">Peliculas  ></a>
+        <a href="">Peliculas de fantasia  ></a>
+        <a href="">Peliculas animadas   ></a>
+
+    </div>
+    <div class="CentroCInfo">
+    <h1 class="titulo" id="TituloPeli">La Mascara</h1>
+
+<div class="prueba">
+    <img src="images/afiche.png" alt="Afiche" class="Aficheprueba">
+    <p class="pclas">ATP +13    /  1h 40 min  /  Fantasia</p>
+    
+</div>
+</div>
+<div class="InfoSalas" id="Infosalas3">
+<form action=""  class="form">
+    <h3 class="h3form">Comprar aqui tus entradas <span class="icon-ticket"></span></h3>
+    <label for="" class="Labelform">Pelicula</label><br>
+    <input type="text" value="La Mascara" name="Peli" class="SelectF" id="SelectFIn" disabled > <br> <br>
+    <label for="" class="Labelform">Sala</label><br>
+    <select name="salas" id="salas" class="SelectF" >
+        <option value="" disabled selected> -- Sala -- </option>
+        <option value="Montevideo">Montevideo</option>
+        <option value="Salto">Salto</option>
+        <option value="Paysandu">Paysandu</option>
+        <option value="Piriapolis">Piriapolis</option>
+      </select>
+      <br><br>
+    <label for="" class="Labelform">Fecha</label><br>
+    <input type="date" name="FechaPeli" class="SelectF" id="FechaPeli" ><br><br>
+    <label for="" class="Labelform">Funcion</label><br>
+    <select name="horariosPeli" id="horaroisF" class="SelectF">
+        <option value=" " disabled selected> -- Horarios -- </option>
+        <option value="12:30">12: 30</option>
+        <option value="15:45">15 : 45</option>
+        <option value="17:50">17 : 50 </option>
+        
+      </select>
+      <br><br>
+    <button class="buttonform" type="button"  onclick="comprobacionesEInicio();">Realizar la compra</button>
+</form>
+</div>
+
+
+
+ <div class="slider">
+    <ul>
+        <li>
+<img src="./images/el-pibe-326x489.jpg" alt="">
+ 
+
+</li>
+        <li>
+<img src="./images/que-bello-es-326x489.jpg" alt="">
+ 
+ 
+</li>
+
+<li>
+    <img src="./images/charada-328x491.jpg" alt="">
+   
+    </li>
+            <li class="lislider">
+    <img src="./images/logo5.png" alt="">
+    
+    
+    </li>
+    </ul>
+</div>
+<!-- fin de slider-->
+
+     <div class="infopeliResum">
+        <h3>Sinopsis</h3>
+        <p>Standley Ipkiss (Jim Carrey) vive en Edge City y trabaja en un banco, tiene una vida aburrida, todo el mundo le toma el pelo y el lo permite. <br> <br> 
+         Tras uno de los peores días de su vida, Stanley encuentra una máscara que representa a Loki, un dios de la malicia y la travesura. Cuando se coloca la máscara se convierte en una persona completamente diferente</p>
+       
+
+    </div>
+    
+    <div class="trailer">
+        <iframe width="660" height="395" src="https://www.youtube.com/embed/DhP0P4q8jLk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div> 
+    
+
+<!-- <div id="ticketentradas">
+    <img src="./images/logo3.png" alt="" id="logopeliticket">
+    <h3>Ticket de entradas</h3>
+    <hr>
+<h5 id="Numticket"></h5>
+<p id="fechaticket">Fecha actual</p>
+<p id="fechaPeliticket"></p>
+
+<h4>Entradas para :</h4>
+<h5 id="peliticket">pelicula</h5>
+<h6 id="Salaticket">Sala</h6>
+<h6 id="Fechapeliculaticket">Fecha</h6>
+<h6 id="Horapeliticket">Hora</h6>
+<h6 id="cantPeliticket">cantidad</h6>
+<h6 id="preciopeliTicket" >Precio</h6>
+<button id="cosa" onclick="document.getElementById('Numticket').innerHTML = ('Su factura es la numero : '+generarAleatorio(1,99999))">Pagar</button>
+<hr>
+<div id="avisosTicket">
+<p>Todas nuestras salas cumplen con todas las normas de higiene sugeridas por el minitrerio de Salud </p>
+<p>Recuerde que en caso que necesite cambiar sus entradas debera dirigirse a la sala mas proxima, <strong>antes del dia de la resreva</strong> para realizar el cambio, el cambio puede tener costos extras.</p>
+<p>Si desea comunicarse puede hacerlo a traves del <a href="tel:+5982345669354">tel: 2345669354  </p></a>
+</div>
+
+
+</div> -->   
+ <div class="InfoSalas2" id="Infosalas4">
+        <form action=""  class="form">
+            <h3 class="h3form">Comprar aqui tus entradas <span class="icon-ticket"></span></h3>
+            <label for="" class="Labelform">Pelicula</label><br>
+            <input type="text" value="La mascara" class="SelectF cacac" id="SelectF2"> <br> <br>
+            <label for="" class="Labelform">Sala</label><br>
+            <select name="salas" id="salas2" class="SelectF">
+                <option value="Montevideo">Montevideo</option>
+                <option value="Salto">Salto</option>
+                <option value="Paysandu">Paysandu</option>
+                <option value="Piriapolis">Piriapolis</option>
+              </select>
+              <br><br>
+            <label for="" class="Labelform">Fecha</label><br>
+            <input type="date" class="SelectF" id="FechaPeli2"><br><br>
+            <label for="" class="Labelform">Funcion</label><br>
+            <select name="SelectF" id="horaroisF2" class="SelectF">
+                <option value=" "> -- Horarios -- </option>
+                <option value="12:30">12: 30</option>
+                <option value="15:45">15 : 45</option>
+                <option value="17:50">17 : 50 </option>
+                
+              </select>
+              <br><br>
+            <button class="buttonform" type="button" id="" onclick="comprobacionesEInicio2();">Realizar la compra</button>
+            
+            <!-- <p id="MostrarAsientos"></p> -->
+            
+        </form>
+        </div>
+        <div class="entradas" id="entradas">
+            <img src="./images/logo5.png" alt="" id="logopeliticket">
+            <h3 id="h3tickettitulo">Ticket de entradas</h3>
+            <!-- <h3 id="titlepdf"> Ya seleccionaste tu peli </h3> -->
+            <p id="entradasp"></p>
+            <p id="entradasp2"></p>
+               
+                <!-- counter-->
+                <h3 id="h3pdf">Comprar de entradas</h3>
+        <div id="container">
+        <div id="number">0</div>
+        <button id="increment" onclick="addMas();">+</button><button id="decrement" onclick="decMenos()" >-</button>
+        </div>
+                <!-- fin de counter-->
+        <button id="elejasientos" onclick="selecseats();"> Elegir tus asientos y Pagar </button>
+        <button id="pagarsinreserva" onclick="pagar();"> Pagar sin reservar </button>
+        <p id="Preciosinseleccion"></p>
+        <br>
+        <div id="aviso1">
+        <div id="avisosTicket1" class="avisoticket">
+            <p class="infoentradas">Todas nuestras salas cumplen con todas las normas de higiene sugeridas por el minitrerio de Salud </p>
+            <p class="infoentradas">Recuerde que en caso que necesite cambiar sus entradas debera dirigirse a la sala mas proxima, <strong>antes del dia de la resreva</strong> para realizar el cambio, el cambio puede tener costos extras.</p>
+            <p class="infoentradas">Si desea comunicarse puede hacerlo a traves del <a href="tel:+5982345669354">tel: 2345669354  </p></a>
+            </div>
+                <button id="pdfexport1">Descargar para pagar</button>
+                <img src="./images/qrvacio.jpg" alt="qrvacio" id="qrvacio">
+            </div>
+        <div id="divselectseat">
+                <h3 id="h3titleselectasientos"> Elegir tus asientos... (hasta 2 entradas)</h3>
+            <button type="button" id="slect1asiento" onclick="asientos();">Selecciona el 1° asiento </button><button type="button" id="btndosEntradas" onclick="asientos2();">Agregar otro asiento</button>
+            <br>
+            <p id="Infoasientos"></p><p id="Infoasientos2"></p>
+            
+            <p id="totalMensage"></p>
+            <!-- <button class="buttonform" type="button" id="calcPrecio" onclick="pagar();">Culminar seleccion</button>-->
+            <p id="precio"></p> 
+            <p id="preciomasseleccion"></p>
+            <hr>
+        <div id="avisosTicket" class="avisoticket">
+        <p>Todas nuestras salas cumplen con todas las normas de higiene sugeridas por el minitrerio de Salud </p>
+        <p>Recuerde que en caso que necesite cambiar sus entradas debera dirigirse a la sala mas proxima, <strong>antes del dia de la resreva</strong> para realizar el cambio, el cambio puede tener costos extras.</p>
+        <p>Si desea comunicarse puede hacerlo a traves del <a href="tel:+5982345669354" id="hrefTicket">tel: 2345669354  </p></a>
+        </div>
+            <button id="pdfexport" onclick="pdfexport();">Descargar para pagar</button>
+            
+        </div>
+        
+        </div>
+    <div class="InfoGral">
+        <table class="w3-table">
+        
+                <h3 class="h3times"> Tambien podes disfrutar la pelicula en estos horarios</h3>
+            
+            <tr>
+              <th>Cine</th>
+              <th>Horarios</th>
+              <th>Subtitulada</th>
+            </tr>
+            <tr class="Trgray">
+              <td >jasdjs 435 </td>
+              <td>12:30</td>
+              <td> ---- </td>
+            </tr>
+            <tr>
+                <td>hsdhf 132</td>
+              <td>15:45</td>
+              <td>ESP</td>
+            </tr>
+            <tr class="Trgray">
+                <td>uert 50</td>
+              <td>17:50</td>
+              <td>ING</td>
+            </tr>
+          </table>
+    </div>
+    
+    <div class="slider2">
+        <ul>
+            <li>
+    <img src="./images/el-pibe-326x489.jpg" alt="">
+      
+    
+    </li>
+            <li>
+    <img src="./images/que-bello-es-326x489.jpg" alt="">
+     <a href="" class="aslider">Mas Info</a> 
+     
+    </li>
+    
+    <li>
+        <img src="./images/charada-328x491.jpg" alt="">
+        <a href="" class="aslider">Mas Info</a>
+        </li>
+                <li class="lislider">
+        <img src="./images/logo5.png" alt="">
+        <a href="" class="aslider">Mas Info</a> 
+        
+        </li>
+        </ul>
+    </div>
+
+    <footer class="footer" id="footer">
+        <div class="infoFooter">
+            <h4>Contactenos</h4>
+            <hr style="width: 30%;">
+        <a href="tel:+5982345669354"><h5>Tel: 2345669354 <span class="icon-phone"></span></h5></a>
+        <a href="">Envianos tus comentarios <span class="icon-contactos"></span></a>
+        
+        
+    </div>
+    
+        <div class="infoFooter">
+            <h4>Redes</h4>
+            <hr style="width: 30%;">
+        <a href="">Youtube <span class="icon-youtube"></span></a><br><br>
+        <a href="">Instagram <span class="icon-instagram"></span></a><br><br>
+        <a href="">Twitter <span class="icon-twitter"></span></a><br><br>
+        <a href="" >Facebook <span class="icon-facebook"></span></a>
+        </div>
+        <div class="infoFooter">
+            <h4>Nosotros</h4>
+            <hr style="width: 30%;">
+            <a href="">Cines Jlasf</a><br><br>
+            <a href="">Trabaja en Jlasf</a><br><br>
+            <a href="">Corporativos</a><br><br>
+            <a href="">Proveedores</a><br>
+
+            
+        
+        </div>
+        <h4 class="InfoFooterCompany"> Jlasf Media Group Company</h4>
+        
+    </footer>
+</body>
+</html>

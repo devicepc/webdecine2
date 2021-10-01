@@ -1,0 +1,13 @@
+
+.icon-menu:before { content: '\e800'; } /* '' */
+.icon-phone:before { content: '\e801'; } /* '' */
+.icon-contactos:before { content: '\e802'; } /* '' */
+.icon-faq:before { content: '\e803'; } /* '' */
+.icon-user-add:before { content: '\e804'; } /* '' */
+.icon-user:before { content: '\e805'; } /* '' */
+.icon-film:before { content: '\e80f'; } /* '' */
+.icon-twitter:before { content: '\f099'; } /* '' */
+.icon-facebook:before { content: '\f09a'; } /* '' */
+.icon-ticket:before { content: '\f145'; } /* '' */
+.icon-youtube:before { content: '\f166'; } /* '' */
+.icon-instagram:before { content: '\f16d'; } /* '' */

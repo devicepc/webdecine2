@@ -1,0 +1,33 @@
+#logopeliticket{
+    height: 80px;
+    margin-left: 2%;
+    margin-bottom: -50px;
+    width: 450px;
+}
+#ticketentradas{
+    margin-left: 7%;
+    margin-right: 7%;
+}
+
+#h3tickettitulo{
+    text-align: center;
+    font-size: 40px;
+}
+#avisosTicketSinRes{
+    display: block;
+}
+.infoentradas{
+    font-size: 15px;
+}
+.avisoticket{
+    background-color: rgb(194, 192, 192);
+}
+
+
+#aviso1{
+    display: none;
+}
+#qrvacio{
+    margin-right: 11%;
+    display: none;
+}
